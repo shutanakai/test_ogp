@@ -18,13 +18,12 @@
         setTimeout(link(), 0);
         function link(){
             if (document.referrer === "https://t.co/") {
-                alert("redirect to sfcc");
-            } else {
-                location.href="https://twitter.com/share?url=https://shutanakai.github.io/test_ogp/content1.html";
+                location.href = "https://staging-asiacommerce-shiseido.demandware.net/s/shiseido_global_jp/test_twitter.html"
+            } else if (document.referrer === "https://staging-asiacommerce-shiseido.demandware.net/s/shiseido_global_jp/test_twitter.html") {
+                location.href = "https://twitter.com/share?url=https://shutanakai.github.io/test_ogp/content1.html";
             }
         }
     </script>
-    <a href="https://twitter.com/share?url=https://shutanakai.github.io/test_ogp/content1.html">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
