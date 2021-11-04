@@ -17,8 +17,11 @@
 
         setTimeout(link(), 0);
         function link(){
-            console.log(document.referrer);
-            // location.href="https://twitter.com/share";
+            if (document.referrer === "https://t.co/") {
+                alert("redirect to sfcc");
+            } else {
+                location.href="https://twitter.com/share";
+            }
         }
     </script>
     <a href="https://twitter.com/share?url=https://shutanakai.github.io/test_ogp/content1.html">Tweet</a>
