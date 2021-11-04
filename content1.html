@@ -14,9 +14,11 @@
 </head>
 <body>
     <script>
+
         setTimeout(link(), 0);
         function link(){
-            location.href="https://twitter.com/share";
+            console.log(document.referrer);
+            // location.href="https://twitter.com/share";
         }
     </script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
